@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DTN.Models.Forum>
+
+<h1>Forums</h1>
+
+<ul>
+    @foreach (var forum in Model)
+    {
+        <li>@forum.Name</li>
+    }
+</ul>
+<a href="/Forums/Create">Add New Forum</a>

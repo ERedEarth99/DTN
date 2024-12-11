@@ -1,0 +1,15 @@
+﻿@model DTN.Models.Post
+
+<h1>@Model.Title</h1>
+<p><strong>Content:</strong></p>
+<p>@Model.Content</p>
+
+<h2>Comments</h2>
+<ul>
+    @foreach (var comment in Model.Comments)
+    {
+        <li>@comment.Content</li>
+    }
+</ul>
+
+<a href="/Post/Create?forumId=@Model.ForumId">Add Comment</a>

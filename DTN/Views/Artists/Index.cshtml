@@ -1,0 +1,11 @@
+﻿@model IEnumerable<DTN.Models.Artist>
+
+<h1>Artists</h1>
+
+<ul>
+    @foreach (var artist in Model)
+    {
+        <li>@artist.Name</li>
+    }
+</ul>
+<a href="/Artist/Create">Add New Artist</a>

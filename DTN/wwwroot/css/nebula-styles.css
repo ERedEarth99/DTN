@@ -58,6 +58,13 @@ header {
 html, body {
     overflow-x: hidden;
 }
+.album-table th, .album-table td {
+    color: white; /* Makes text visible on dark backgrounds */
+}
+
+.album-table th {
+    font-weight: bold; /* Optional: Bold text for headers */
+}
 
 footer {
     padding: 20px 0;

@@ -1,23 +1,26 @@
 ﻿@model IEnumerable<Album>
 
 <h1>Albums</h1>
-
-<table class="table">
+<table class="table table-dark table-striped table-hover table-bordered">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Artist</th>
-            <th>Release Date</th>
+            <th style="color: white;">Title</th>
+            <th style="color: white;">Artist</th>
+            <th style="color: white;">Release Date</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var album in Model)
-        {
-            <tr>
-                <td>@album.Title</td>
-                <td>@album.Artist</td>
-                <td>@album.ReleaseDate.ToShortDateString()</td>
-            </tr>
-        }
+        <tr>
+            <td style="color: white;">Album 1</td>
+            <td style="color: white;">Artist 1</td>
+            <td style="color: white;">1/1/2024</td>
+        </tr>
+        <tr>
+            <td style="color: white;">Album 2</td>
+            <td style="color: white;">Artist 2</td>
+            <td style="color: white;">2/1/2024</td>
+        </tr>
     </tbody>
 </table>
+
+<a href="/Album/Create">Add New Album</a>
